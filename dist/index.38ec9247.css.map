@@ -1,0 +1,1 @@
+{"mappings":"AAAA","sources":["src/styles/style.scss"],"sourcesContent":["h1 {\r\n    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;\r\n    color: yellow;\r\n}"],"names":[],"version":3,"file":"index.38ec9247.css.map","sourceRoot":"/__parcel_source_root/"}
