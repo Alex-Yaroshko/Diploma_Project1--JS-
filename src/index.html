@@ -5,26 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link type="Image/x-icon" href="./assets/images/icons8-w-cute-48.png" rel="icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.scss">
     <link rel="stylesheet" href="./styles/reset.scss">
     <link rel="stylesheet" href="./styles/fonts.scss">
+    <link rel="stylesheet" href="./styles/adaptive.scss">
 </head>
 <body>
     <header class="header">
         <div class ="container">
             <div class ="header__inner">
                 <a href="#" class="header__inner-logo ">wildberries</a>
-                <input class="header__inner-search" placeholder="Поиск...">
-                <button class = "header__inner-cart"></button>
+                <input type="text" class="header__inner-search" placeholder="Поиск..." id="search">
+                <button class = "header__inner-cart" id="cart-btn"></button>
             </div>
         </div>
     </header>
 <!-- MAIN -->
-    <main class="main">
+    <section class="main">
+        <!-- Cart -->
+<section class="cart" id="cart">
+    <button class="close-cart">X</button>
+    <div class="cart__header">
+        <p>Корзина</p>
+    </div>
+    <ul class="items-list">
+    </ul>
+    <div class="summ"><span>Итого:</span><span>999</span></div>
+    <button class="clear-cart">Очистить корзину</button>
+</section>
         <div class="container">
+<!-- SLIDER -->
             <div class="main__inner">
                 <div class="slider">
                     <div class="slider-line">
@@ -39,18 +53,22 @@
                 
             </div> 
         </div>
-    </main>
-
+    </section>
 <!-- CARDS -->
-
-<div class="cards">
+<section class="cards">
     <div class="container">
         <h2> Хиты продаж</h2>
-        <div class="cards__inner">
-
+        <ul class="cards__list" id="cards__list">
+        </ul>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <a href="mailto:yaroshko98@gmail.com">Made by Alexander Yaroshko. TeachMeSkills 2022.</a>
         </div>
     </div>
-</div>
-    <script src="./script.js"></script>
+</footer>
+    <script type="module"  src="./index.js"></script>
 </body>
 </html>

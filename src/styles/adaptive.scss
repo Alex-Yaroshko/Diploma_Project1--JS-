@@ -1,0 +1,35 @@
+@media (max-width:1024px) {
+    .header__inner {
+        &-logo {
+            font-weight: 600;
+            color: aqua;
+            text-align: center;
+            font-size: 28px;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    }
+}
+@media (max-width:768px) {
+    .header__inner {
+        &-logo {
+            display: none;
+        }
+    }
+}
+@media (max-width:699px) {
+    .container h2 {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+@media (max-width:469px) {
+    .card-item {
+        margin: 0 auto;
+    }
+    .cards {
+        &__list {
+            row-gap: 25px;
+        }
+    }
+}

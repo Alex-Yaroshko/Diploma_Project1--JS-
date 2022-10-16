@@ -14,3 +14,34 @@
         text-align: center;
     }
 }
+
+
+
+// Cards
+
+.card-item__info {
+    &-price-discount {
+        font-weight: 600;
+    }
+    &-price-full {
+        color: lightgray;
+        text-decoration: line-through;
+        font-size: small;
+    }
+    &-description {
+        font-weight: 500;
+        font-size: small;
+        color: lightgray;
+    }
+}
+
+
+
+// CART
+.cart {
+    &__header {
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+    }
+}

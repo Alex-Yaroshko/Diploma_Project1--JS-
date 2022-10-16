@@ -17,4 +17,9 @@ time, mark, audio, video {
 	vertical-align: baseline;
     box-sizing: border-box;
 	scroll-behavior: smooth;
+	list-style-type: none;
+}
+.container {
+	padding: 0px 10px;
+	position: relative;
 }
