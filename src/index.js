@@ -30,4 +30,3 @@ modalWindowClose.addEventListener('click', function () {
     modalWindow.style.display = "none";
 });
 
-setTimeout(cart, 2000);

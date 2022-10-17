@@ -44,35 +44,6 @@ search.oninput = function search () {
         });
     }
 }
-// CART ADD
-export let cartList = document.querySelector(".items-list");
-export let cartItemText = document.querySelectorAll(".card-item__info-description");
-export function cart() {
-    const addTocart = document.querySelectorAll('.card-tocart');
-    displayCart = '';
-    addTocart.forEach((elem)=>{
-        elem.addEventListener('click',()=>{
-            console.log( '3');
-            displayCart += ` 
-            <li class="items-list__element">
-            <p class="items-list__element-text">3280</p>
-            <span class="items-list__element-price">Стоимость</span>
-            <button class="clear-item">Удалить</button>
-        </li>` 
-        cartList.innerHTML = displayCart;
-        })
-      })
-};
-// export const deleteItem = document.querySelectorAll(".clear-item");
-// // Delete item
-// export function deleteItems () {
-//     console.log('4');
-//         deleteItem.addEventListener('click', ()=>{
-//             console.log('5');
-//     });
-// };
-// setTimeout(deleteItems, 4000);
-
 window.addEventListener('resize', init);
 init();  
 document.querySelector('.slider-prev').addEventListener('click', function() {

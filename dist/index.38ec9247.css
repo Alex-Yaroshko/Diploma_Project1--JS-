@@ -309,4 +309,45 @@
   opacity: 1;
 }
 
+.modal {
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: #000000e6;
+  padding-top: 100px;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: auto;
+}
+
+.modal-content {
+  width: 80%;
+  max-width: 700px;
+  margin: auto;
+  display: block;
+}
+
+.close {
+  color: #f1f1f1;
+  font-size: 30px;
+  transition: all .3s;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+}
+
+.close:hover, .close:focus {
+  color: #bbb;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=index.38ec9247.css.map */
